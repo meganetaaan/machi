@@ -1,0 +1,1 @@
+console.error("Error: Cannot find module '/home/ishikawa/Work/machi/src/js/main.js' from '/home/ishikawa/Work/machi'");

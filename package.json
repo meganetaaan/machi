@@ -1,0 +1,26 @@
+{
+  "name": "machi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.17.2",
+    "exorcist": "^0.4.0",
+    "gh-pages": "^0.11.0",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "watch": "watchify -t [ babelify --presets [ es2015 ]  ] src/js/main.js -o \"exorcist ./public/js/main.js.map > ./public/js/main.js\" -d",
+    "server": "browser-sync start -c bs-config.js",
+    "start": "npm run watch & npm run server",
+    "deploy": "gh-pages -d public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "private": "ture"
+}
